@@ -27,17 +27,17 @@
             </section>
         </header>
 
-        <main>
-            <div class="blog"> <!-- Created a div to contain the "blog" -->
-                <article> <!-- Created an article element for "posts" to group the individual blog posts -->
+        <main> <!--review those hyperlinks-->
+            <div> 
+                <article>
                     <h1>Blog Posts</h1>
                     <div class="post"> 
                         <div class="post-image"> 
-                            <img src="images/img1.avif" alt="Unveiling the Blueprint of the Web Image"/> <!-- Created an img element with the appropriate src and alt attributes for the post image -->
+                            <img src="images/img1.avif" alt="Unveiling the Blueprint of the Web Image"> 
                         </div>
                     
-                        <div class="post-content"> <!-- Inside each post div is a "post-content" to contain the post title, info, and summary -->
-                            <a>Unveiling the Blueprint-Mastering HTML Document Structure</a>
+                        <div class="post-content"> 
+                            <a href="#blog">Unveiling the Blueprint-Mastering HTML Document Structure</a>
                             <p>Posted on November 13, 2023 by AWSCC-DSWD</p>
                             <span class="spacer"></span>
                             <p>Imagine you're about to embark on a journey to build your dream house. What's the first thing you need? A solid blueprint, right? Well, welcome to the world of web development, where your canvas is a blank web page, and your blueprint is the HTML document structure.</p>
@@ -45,10 +45,10 @@
                     </div>
                     <div class="post">
                         <div id="post-image">
-                            <img src="images\img2.jpeg" alt="Mastering the Art: Creating Interactive Web Experiences"/>
+                            <img src="images\img2.jpeg" alt="Mastering the Art: Creating Interactive Web Experiences">
                         </div>
                         <div class="post-content">
-                            <a>Mastering the Art: Creating Interactive Web Experiences</a>
+                            <a href="#blog">Mastering the Art: Creating Interactive Web Experiences</a>
                             <p>Posted on November 12, 2023 by AWSCC-DSWD</p>
                             <span class="spacer"></span>
                             <p>Explore the art of creating contact forms, surveys, and more. Understand how to collect user data, validate inputs, and enhance the user experience. From simple text inputs to radio buttons and dropdown menus, we'll cover it all in this exciting journey into web forms.</p>
@@ -56,10 +56,10 @@
                     </div>
                     <div class="post">
                         <div class="post-image">
-                            <img src="images\img3.jpeg" alt="Revolutionize Web Design: Crafting Dynamic Layouts"/>
+                            <img src="images\img3.jpeg" alt="Revolutionize Web Design: Crafting Dynamic Layouts">
                         </div>
                         <div class="post-content">
-                            <a>Revolutionize Web Design: Crafting Dynamic Layouts</a>
+                            <a href="#blog">Revolutionize Web Design: Crafting Dynamic Layouts</a>
                             <p>Posted on November 11, 2023 by AWSCC-DSWD</p>
                             <span class="spacer"></span>
                             <p>Unlock the magic of CSS Flexbox and transform your web layout! Say goodbye to the days of complex grids and welcome the simplicity and flexibility of Flexbox. Learn how to create responsive and dynamic layouts that adapt effortlessly to different screen sizes.</p>
@@ -68,58 +68,56 @@
                 </article>
             </div>
             
-            <aside> <!-- Inside the main is a semantic element for "sidebar" -->
+            <aside> <!--insert hyperlinks-->
                 <div class="popular-posts-side">
                     <h2>POPULAR POSTS</h2>
-                    <div class="popular-post">
-                        <div class="popular-post-image">
-                            <img src="images\posts\post1.jpg"/>
+                    <div class="popular-posts"></div>
+                        <div class="popular-post">
+                            <div class="popular-post-image">
+                                <img src="images\posts\post1.jpg">
+                            </div>
+                            <div class="popular-post-content">
+                                <a href="#">Interesting HTML tags</a>
+                                <p>I am going to show you the top 9 interesting HTML...</p>
+                            </div>
                         </div>
-                        <div class="popular-post-content">
-                            <a class="popular-post-title">Interesting HTML tags</a>
-                            <p clas="popular-post-desc">I am going to show you the top 9 interesting HTML...</p>
+                        <div class="popular-post">
+                            <div class="popular-post-image">
+                                <img src="images\posts\post2.png">
+                            </div>
+                            <div class="popular-post-content">
+                                <a href="#">Unleash the Potential of Lists</a>
+                                <p>HTML lists are a powerful tool for organizing...</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="popular-post">
-                        <div class="popular-post-image">
-                            <img src="images\posts\post2.png"/>
+                        <div class="popular-post">
+                            <div class="popular-post-image">
+                                <img src="images\posts\post3.webp">
+                            </div>
+                            <div class="popular-post-content">
+                                <a href="#">Master HTML in 24 Mins</a>
+                                <p>Learn HTML & CSS right from the basics...</p>
+                            </div>
                         </div>
-                        <div class="popular-post-content">
-                            <a class="popular-post-title">Unleash the Potential of Lists</a>
-                            <p clas="popular-post-desc">HTML lists are a powerful tool for organizing...</p>
-                        </div>
-                    </div>
-                    <div class="popular-post">
-                        <div class="popular-post-image">
-                            <img src="images\posts\post3.webp"/>
-                        </div>
-                        <div class="popular-post-content">
-                            <a class="popular-post-title">Master HTML in 24 Mins</a>
-                            <p clas="popular-post-desc">Learn HTML & CSS right from the basics...</p>
-                        </div>
-                    </div>
-                    <div class="popular-post">
-                        <div class="popular-post-image">
-                            <img src="images\posts\post4.png"/>
-                        </div>
-                        <div class="popular-post-content">
-                            <a class="popular-post-title">The state of a checkbox</a>
-                            <p clas="popular-post-desc">I was in the middle of creating a small web...</p>
+                        <div class="popular-post">
+                            <div class="popular-post-image">
+                                <img src="images\posts\post4.png">
+                            </div>
+                            <div class="popular-post-content">
+                                <a href="#">The state of a checkbox</a>
+                                <p>I was in the middle of creating a small web...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="social-side">
+                <div class="social-side"> <!--review the pinterest part; it should be instagram-->
                     <h2>FOLLOW US</h2>
-                    <div>
-                        <a href="https://www.facebook.com/"></a>
-                            <img src="images\social\facebook.png" alt="Facebook"/>
-                        <a href="https://twitter.com/"></a>
-                            <img src="images\social\twitter.png" alt="Twitter"/>
-                        <a href="https://www.pinterest.com/"></a>
-                            <img src="images\social\pinterest.png"/>
-                            <a href="https://www.linkedin.com/"></a>
-                        <img src="images\social\linkedin.png" alt="LinkedIn"/>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><img src="images\social\facebook.png" alt="Facebook"></a>
+                        <a href="https://twitter.com/"><img src="images\social\twitter.png" alt="Twitter"></a>
+                        <a href="https://www.pinterest.com/"><img src="images\social\pinterest.png" alt="Pinterest"></a>
+                        <a href="https://www.linkedin.com/"><img src="images\social\linkedin.png" alt="LinkedIn"></a>
                     </div>
                 </div>
             </aside>
@@ -142,10 +140,9 @@
                     <hr>
                     <p>If you have any questions or need assistance, our support team is here to help. Contact us via email or visit our help center for answers to frequently asked questions.</p>
                 </div>
+                <hr>
+                <p>2023 Blog Structure</p>
             </div>
-            <hr>
-            <p>2023 Blog Structure</p>
-            <p class="copy-right"></p>
         </footer>
     </div>
 </body>
