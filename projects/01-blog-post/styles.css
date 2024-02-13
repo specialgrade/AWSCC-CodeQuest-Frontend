@@ -1,16 +1,15 @@
-/* Typography */
+/* Typography - Lato */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 /* Global Styling */
 :root {
-    --white: ; /* Define your main color variable */
-    --black: ; /* Define your secondary color variable */
-    --green: ; /* Define your tertiary color variable */
-    --box-shadow: ; /* Define your box shadow variable */
+    --white: #FFFFFF ; /* main color: bg*/
+    --black: #000000 ; /* secondary color: text, footer */
+    --green: #39811D ; /* tertiary color: accent color, header */
+    --box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* box shadow = WILL MODIFY */
 }
 
-/* Reset and Normalize */
-*,
+*, /* resets default browser styling  */
 *::after,
 *::before { 
     padding: 0;
@@ -56,31 +55,31 @@ body {
 
 /* Navigation Styling */
 
-/* Step 1: Navigation Bar Styles */
+/* Navigation Bar Styles */
 nav {
-    display: ;
-    justify-content: ;
-    align-items: ;
-    flex-wrap: ;
-    flex-direction: ;
-    margin: ; 
-    height: ;
-    position: ; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 0; 
+    height: 60px;
+    position: fixed; 
 }
 
-/* Step 2: Navigation Text Styles */
+/* Navigation Text Styles */
 nav p {
-    font-size: ;
-    font-weight: ;
-    color: ;
-    cursor: ;
-    transition: ; 
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* WILL MODIFY */
 }
 
-/* Step 3: Navigation Span Styles */
+/* Navigation Span Styles */
 nav p span {
-    color: ;
-    transition: ; 
+    color: #39811D;
+    transition: color 0.3s ease; 
 }
 
 /* Step 4: Navigation List Styles */
