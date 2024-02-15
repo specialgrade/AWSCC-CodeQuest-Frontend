@@ -38,6 +38,11 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5; 
+    background-color: #FFFFFF; /* MODIFIED */
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
 }
 
 img, picture {
@@ -48,62 +53,73 @@ article, aside, footer, header, nav, section {
 	display: block; 
 }
 
-body {
+/* body {
     background-color: #FFFFFF;
     overflow-x: hidden; 
-}
+} */
 
 /* Navigation Styling */
 
 /* Navigation Bar Styles */
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    margin: 0; 
-    height: 60px;
     position: fixed; 
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: nowrap; 
+    flex-direction: column;
+    margin: 0; 
+    height: 60px; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 16px;
+    background-color: #FFFFFF;
+    box-shadow: var(--box-shadow);
 }
 
 /* Navigation Text Styles */
 nav p {
     font-size: 16px;
     font-weight: bold;
-    color: #000000;
+    color: #39811D; /* MODIFIED */
     cursor: pointer;
-    transition: background-color 0.3s ease; /* WILL MODIFY */
+    transition: color 0.3s ease; /* WILL MODIFY */
 }
 
 /* Navigation Span Styles */
 nav p span {
-    color: #39811D;
+    color: #000000;
     transition: color 0.3s ease; 
 }
 
 /* Navigation List Styles */
 nav ul { /* WILL MODIFY */
     display: flex;
-    gap: 10px; 
+    gap: 16px; 
     font-size: 16px;
     z-index: 1; 
+    margin-left: auto; /* MODIFIED */
 }
 
 /* Navigation List Item Styles */
 nav ul li { /* WILL MODIFY */
-    border: 1px solid #000000;
-    padding: 10px;
-    border-radius: 5px;
+    /* border: 1px solid #000000; */
+    padding: 8px;
+    border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease; 
+    background-color: #FFFFFF; /* MODIFIED */
 }
 
 /* Navigation List Item Hover Styles */
 nav ul li:hover { /* WILL MODIFY */
-    border: 2px solid #000000;
-    border-radius: 10px;
-    transition: all 0.3s ease; 
+    /* border: 1px solid #000000; */
+    background-color: #39811D;
+    color: #FFFFFF;
+    /* border-radius: 8px;
+    transition: all 0.3s ease; */
 }
 
 /* Navigation List Item Anchor Styles */
@@ -115,7 +131,7 @@ nav ul li a { /* WILL MODIFY */
 
 /* Navigation List Item Anchor Hover Styles */
 nav ul li:hover > a { /* WILL MODIFY */
-    color: #000000;
+    color: #FFFFFF;
     transition: color 0.3s ease; 
 }
 
@@ -138,58 +154,88 @@ nav ul li:hover > a { /* WILL MODIFY */
 /* Section Styles */
 section { /* WILL MODIFY */
     position: relative;
-    background-color: #FFFFFF;
+    background-color: #39811D;
     height: 100vh; 
+    overflow: hidden;
+}
+
+section h1 { /* WILL MODIFY */
+    font-size: 64px; /* MODIFIED */
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+    text-align: center; /* Centered the heading */
+    padding-top: 30%; /* Vertically centered the heading */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section p { /* WILL MODIFY */
+    font-size: 24px; 
+    line-height: 1.5;
+    margin-bottom: 32px;
+    color: #FFFFFF;
+    text-align: center; /* Centered the paragraph */
+    padding-top: 2%; /* Vertically centered the paragraph */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Content Styles */
 .content { /* WILL MODIFY */
     position: absolute;
-    left: 50%;
+    left: 0;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     text-align: center;
     color: #000000;
-    width: 80%; 
+    width: 100%; 
+    padding: 0 15%; /* MODIFIED */
+    box-sizing: border-box;
 }
 
 /* Heading Styles */
 .content h2 {
-    font-size: 24px; 
+    font-size: 38.4px; /* MODIFIED */
+    line-height: 1.2;
+    margin-bottom: 16px;
 }
 
 /* Paragraph Styles */
 .content p {
     font-size: 16px; 
+    line-height: 1.5;
+    margin-bottom: 32px;
 }
 
 /* Responsive Styles */
 @media only screen and (max-width: 945px) {
     .content h2 {
-        font-size: 20px; 
+        font-size: 35.2px; 
     }
     
     .content p {
-        font-size: 14px; 
+        font-size: 22.4px; 
     }
 }
 
 @media only screen and (max-width: 680px) {
     .content h2 {
-        font-size: 18px; 
+        font-size: 32px; 
     }
     
     .content p {
-        font-size: 12px; 
+        font-size: 19.2px; 
     }
 }
 
 @media only screen and (max-width: 300px) {
     .content h2 {
-        font-size: 16px; 
+        font-size: 28.8px; 
     }
     
     .content p {
+        font-size: 16px;
         display: none; 
     }
 }
@@ -209,6 +255,7 @@ section { /* WILL MODIFY */
 @media only screen and (max-width: 1124px) {
     .main-content {
         margin: 10px; 
+        flex-direction: column; /* MODIFIED */
     }
 }
 
@@ -230,6 +277,8 @@ section { /* WILL MODIFY */
     margin-bottom: 20px;
     position: relative;
     min-height: 200px; 
+    border-radius: 8px; /* MODIFIED */
+    overflow: hidden;
 }
 
 /* Post Image Styles */
@@ -237,6 +286,7 @@ section { /* WILL MODIFY */
     min-height: 200px;
     transition: opacity 0.3s ease;
     overflow: hidden; 
+    width: 30%; /* MODIFIED */
 }
 
 /* Hover Effect on Post Image */
@@ -250,6 +300,7 @@ section { /* WILL MODIFY */
     height: 100%;
     transition: transform 0.3s ease;
     object-fit: cover; 
+    width: 100%; /* MODIFIED */
 }
 
 /* Post Content Styles */
@@ -260,6 +311,7 @@ section { /* WILL MODIFY */
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center; 
+    width: 78%; /* MODIFIED */
 }
 
 /* Post Title Styles */
@@ -268,6 +320,7 @@ section { /* WILL MODIFY */
     font-size: 32px;
     font-weight: bold;
     cursor: default; 
+    margin-bottom: 10px; /* MODIFIED */
 }
 
 /* Post Info Styles */
@@ -276,6 +329,7 @@ section { /* WILL MODIFY */
     padding: 10px;
     color: #000000;
     font-size: 18px; 
+    margin-bottom: 20px; 
 }
 
 /* Post Summary Styles */
@@ -299,7 +353,17 @@ section { /* WILL MODIFY */
     }
 
     .post {
-        flex-direction: none; 
+        flex-direction: column; /* MODIFIED */
+    }
+
+    .post-image { /* MODIFIED */
+        width: 100%;
+        height: 200px;
+        min-height: 200px;
+    }
+
+    .post-content { /* MODIFIED */
+        width: 100%;
     }
 }
 
@@ -310,15 +374,16 @@ section { /* WILL MODIFY */
     text-align: right;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: flex-start; 
+    /* flex-wrap: wrap; */
+    align-items: flex-end;
+    /* align-content: flex-start; */
 }
 
 /* Popular Posts Container Styles */
 .popular-posts-side { /* WILL MODIFY */
     margin: 20px 0;
     width: 100%; 
+    text-align: right;
 }
 
 /* Popular Posts Heading Styles */
@@ -328,6 +393,7 @@ section { /* WILL MODIFY */
     font-weight: bold;
     padding-bottom: 10px;
     padding-top: 0; 
+    text-align: right;
 }
 
 /* Popular Post Styles */
@@ -350,13 +416,15 @@ section { /* WILL MODIFY */
 .popular-post:hover { /* WILL MODIFY */
     margin-left: -10px;
     margin-right: -10px;
-    transition: transform 0.3s ease-in-out; 
+    /* transition: transform 0.3s ease-in-out; */
 }
 
 /* Popular Post Image Styles */
 .popular-post-image { /* WILL MODIFY */
     width: 100px;
-    height: 100px; 
+    height: 120px; 
+    overflow: hidden; /* MODIFIED */
+    border-radius: 8px;
 }
 
 /* Popular Post Image Hover Styles */
@@ -364,19 +432,24 @@ section { /* WILL MODIFY */
     min-width: 100%;
     min-height: 100%;
     object-fit: cover; 
+    transition: transform 0.3s ease; /* MODIFIED */
 }
 
 /* Popular Post Title Styles */
 .popular-post-title { /* WILL MODIFY */
-    font-size: 18px;
+    font-size: 16px; /* MODIFIED */
     color: #000000;
     font-weight: bold; 
+    margin-bottom: 5px;
+    text-align: right; /* MODIFIED */
 }
 
 /* Popular Post Description Styles */
 .popular-post-desc { /* WILL MODIFY */
-    font-size: 14px;
-    color: #000000; 
+    font-size: 14px; 
+    color: #000000; /* MODIFIED */
+    margin-bottom: 10px;
+    text-align: right; /* MODIFIED */
 }
 
 /* Responsive Styles for Popular Posts Container */
@@ -393,7 +466,9 @@ section { /* WILL MODIFY */
 /* Social Side Container Styles */
 .social-side { /* WILL MODIFY */
     margin: 20px 0;
-    width: 50px; 
+    width: 100px; 
+    display: flex;
+    justify-content: center;
 }
 
 /* Social Side Box Styles */
@@ -405,11 +480,12 @@ section { /* WILL MODIFY */
     border-radius: 50%;
     gap: 10px;
     justify-content: center; 
+    margin: 0 5px;
 }
 
 /* Social Side Link Styles */
 .social-side div a { /* WILL MODIFY */
-    max-width: 100%;
+    max-width: 32px;
     transition: transform 0.3s ease-in-out; 
 }
 
@@ -418,6 +494,7 @@ section { /* WILL MODIFY */
     border-radius: translateY(-5px);
     /* filter: ; */
     transition: transform 0.3s ease-in-out; 
+    border-radius: 50%; /* MODIFIED */
 }
 
 /* Footer Splitter Styles */
@@ -468,16 +545,19 @@ section { /* WILL MODIFY */
 /* Footer Box Styles */
 .container footer .footerBoxes .footerBox { /* WILL MODIFY */
     flex: 1;
-    text-align: center; 
+    text-align: left; 
 }
 
 /* Footer Box Heading Styles */
 .container footer .footerBoxes .footerBox h3 { /* WILL MODIFY */
-    color: #000000;
+    color: #FFFFFF;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 1px;
     padding-bottom: 10px; 
+    margin-bottom: 10px; /* MODIFIED */
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 10px;
 }
 
 /* Footer Box Divider Styles */
@@ -492,7 +572,7 @@ section { /* WILL MODIFY */
 /* Footer Box Text Styles */
 .container footer .footerBoxes .footerBox p { /* WILL MODIFY */
     font-size: 14px;
-    color: #000000; 
+    color: #FFFFFF; 
 }
 
 /* Footer Splitter Styles */
@@ -500,7 +580,7 @@ section { /* WILL MODIFY */
     height: 1px;
     width: 100%;
     margin: 20px 0;
-    background: #000000;
+    background: #FFFFFF;
     border: none;
     margin-bottom: 40px; 
 }
@@ -512,6 +592,11 @@ section { /* WILL MODIFY */
     text-align: center;
     opacity: 0.5;
     padding: 20px 0; 
+    color: #FFFFFF;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Responsive Design */
