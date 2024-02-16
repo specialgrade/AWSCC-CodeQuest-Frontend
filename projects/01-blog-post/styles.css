@@ -39,7 +39,7 @@ body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
     line-height: 1.5; 
-    background-color: #EEEEEE; /* MODIFIED */
+    background-color: #EEEEEE;  
     color: #000000;
     margin: 0;
     padding: 0;
@@ -54,11 +54,6 @@ article, aside, footer, header, nav, section {
 	display: block; 
 }
 
-/* body {
-    background-color: #FFFFFF;
-    overflow-x: hidden; 
-} */
-
 /* Navigation Styling */
 
 /* Navigation Bar Styles */
@@ -67,10 +62,6 @@ nav {
     position: fixed; 
     justify-content: space-between;
     align-items: center;
-    /* flex-wrap: nowrap; 
-    flex-direction: column;
-    margin: 0; 
-    height: 60px; */
     width: 100%;
     top: 0;
     left: 0;
@@ -84,9 +75,9 @@ nav {
 nav p {
     font-size: 16px;
     font-weight: bold;
-    color: #39811D; /* MODIFIED */
+    color: #39811D;  
     cursor: pointer;
-    transition: color 0.3s ease; /* WILL MODIFY */
+    transition: color 0.3s ease;  
 }
 
 /* Navigation Span Styles */
@@ -96,42 +87,38 @@ nav p span {
 }
 
 /* Navigation List Styles */
-nav ul { /* WILL MODIFY */
+nav ul { 
     display: flex;
     gap: 16px; 
     font-size: 16px;
     z-index: 1; 
-    margin-left: auto; /* MODIFIED */
+    margin-left: auto;  
 }
 
 /* Navigation List Item Styles */
-nav ul li { /* WILL MODIFY */
-    /* border: 1px solid #000000; */
+nav ul li {  
     padding: 8px;
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease; 
-    background-color: #FFFFFF; /* MODIFIED */
+    background-color: #FFFFFF;  
 }
 
 /* Navigation List Item Hover Styles */
-nav ul li:hover { /* WILL MODIFY */
-    /* border: 1px solid #000000; */
+nav ul li:hover { 
     background-color: #39811D;
     color: #FFFFFF;
-    /* border-radius: 8px;
-    transition: all 0.3s ease; */
 }
 
 /* Navigation List Item Anchor Styles */
-nav ul li a { /* WILL MODIFY */
+nav ul li a { 
     color: #000000;
     font-weight: normal;
     transition: color 0.3s ease; 
 }
 
 /* Navigation List Item Anchor Hover Styles */
-nav ul li:hover > a { /* WILL MODIFY */
+nav ul li:hover > a { 
     color: #FFFFFF;
     transition: color 0.3s ease; 
 }
@@ -146,44 +133,45 @@ nav ul li:hover > a { /* WILL MODIFY */
 /* Responsive Styles for Hidden Navigation on Small Screens */
 @media only screen and (max-width: 700px) {
     nav ul {
-        display: none; /* WILL MODIFY */
+        display: none; 
     }
 }
 
 /* Slider Section Styling */
 
 /* Section Styles */
-section { /* WILL MODIFY */
+section {  
     position: relative;
     background-color: #39811D;
-    height: 100vh; 
-    overflow: hidden;
+    height: 60vh; 
+    overflow: hidden; 
+    justify-content: center;
 }
 
-section h1 { /* WILL MODIFY */
-    font-size: 64px; /* MODIFIED */
+section h1 {  
+    font-size: 64px;  
     line-height: 1.2;
     margin-bottom: 16px;
     color: #FFFFFF;
-    text-align: center; /* Centered the heading */
-    padding-top: 30%; /* Vertically centered the heading */
+    text-align: center; 
+    padding-top: 25vh;  
     width: 100%;
     box-sizing: border-box;
 }
 
-section p { /* WILL MODIFY */
+section p {  
     font-size: 24px; 
     line-height: 1.5;
     margin-bottom: 32px;
     color: #FFFFFF;
-    text-align: center; /* Centered the paragraph */
-    padding-top: 2%; /* Vertically centered the paragraph */
+    text-align: center;  
+    padding-top: 5vh;  
     width: 100%;
     box-sizing: border-box;
 }
 
 /* Content Styles */
-.content { /* WILL MODIFY */
+.content {  
     position: absolute;
     left: 0;
     top: 50%;
@@ -191,13 +179,13 @@ section p { /* WILL MODIFY */
     text-align: center;
     color: #000000;
     width: 100%; 
-    padding: 0 15%; /* MODIFIED */
+    padding: 0 15%;  
     box-sizing: border-box;
 }
 
 /* Heading Styles */
 .content h2 {
-    font-size: 38.4px; /* MODIFIED */
+    font-size: 38.4px;  
     line-height: 1.2;
     margin-bottom: 16px;
 }
@@ -244,7 +232,7 @@ section p { /* WILL MODIFY */
 /* Main Content Section Styling */
 
 /* Main Content Container Styles */
-.main-content { /* WILL MODIFY */
+.main-content {  
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -256,7 +244,7 @@ section p { /* WILL MODIFY */
 @media only screen and (max-width: 1124px) {
     .main-content {
         margin: 10px; 
-        flex-direction: column; /* MODIFIED */
+        flex-direction: column;  
     }
 }
 
@@ -271,70 +259,70 @@ section p { /* WILL MODIFY */
 }
 
 /* Post Styles */
-.post { /* WILL MODIFY */
+.post {  
     display: flex;
     background-color: #FFFFFF;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     position: relative;
     min-height: 200px; 
-    border-radius: 8px; /* MODIFIED */
+    border-radius: 8px; 
     overflow: hidden;
+    margin: 20px;
 }
 
 /* Post Image Styles */
-.post-image { /* WILL MODIFY */
+.post-image { 
     min-height: 200px;
     transition: opacity 0.3s ease;
     overflow: hidden; 
-    width: 30%; /* MODIFIED */
+    width: 30%; 
 }
 
 /* Hover Effect on Post Image */
-.post:hover .post-image img { /* WILL MODIFY */
+.post:hover .post-image img { 
     transform: scale(1.1);
     transition: transform 0.3s ease; 
 }
 
 /* Post Image Inner Styles */
-.post-image img { /* WILL MODIFY */
+.post-image img { 
     height: 100%;
     transition: transform 0.3s ease;
     object-fit: cover; 
-    width: 100%; /* MODIFIED */
+    width: 100%; 
 }
 
 /* Post Content Styles */
-.post-content { /* WILL MODIFY */
+.post-content { 
     padding: 20px;
     text-align: left;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center; 
-    width: 78%; /* MODIFIED */
+    width: 78%; 
 }
 
 /* Post Title Styles */
-.post-title { /* WILL MODIFY */
+.post-title { 
     color: #000000;
     font-size: 32px;
     font-weight: bold;
     cursor: default; 
-    margin-bottom: 10px; /* MODIFIED */
+    margin-bottom: 10px; 
 }
 
 /* Post Info Styles */
-.post-info { /* WILL MODIFY */
+.post-info { 
     text-align: left;
-    padding: 10px;
     color: #000000;
     font-size: 18px; 
     margin-bottom: 20px; 
 }
 
 /* Post Summary Styles */
-.post-summary { /* WILL MODIFY */
+.post-summary { 
     line-height: 1.5;
     color: #000000;
     font-size: 16px; 
@@ -354,16 +342,16 @@ section p { /* WILL MODIFY */
     }
 
     .post {
-        flex-direction: column; /* MODIFIED */
+        flex-direction: column; 
     }
 
-    .post-image { /* MODIFIED */
+    .post-image { 
         width: 100%;
         height: 200px;
         min-height: 200px;
     }
 
-    .post-content { /* MODIFIED */
+    .post-content { 
         width: 100%;
     }
 }
@@ -371,34 +359,37 @@ section p { /* WILL MODIFY */
 /* Sidebar Styling */
 
 /* Sidebar Container Styles */
-.sidebar { /* WILL MODIFY */
+.sidebar { 
     text-align: right;
     display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap; */
+    flex-direction: row;
+    flex-wrap: wrap; 
     align-items: flex-end;
-    /* align-content: flex-start; */
+    align-content: flex-start; 
 }
 
 /* Popular Posts Container Styles */
-.popular-posts-side { /* WILL MODIFY */
+.popular-posts-side { 
     margin: 20px 0;
     width: 100%; 
-    text-align: right;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
 }
 
 /* Popular Posts Heading Styles */
-.popular-posts-side h2, .social-side h2 { /* WILL MODIFY */
+.popular-posts-side h2, .social-side h2 { 
     font-size: 24px;
     color: #000000;
     font-weight: bold;
     padding-bottom: 10px;
     padding-top: 0; 
-    text-align: right;
+    text-align: center;
+    order: -1;  
 }
 
 /* Popular Post Styles */
-.popular-post { /* WILL MODIFY */
+.popular-post {  
     position: relative;
     background-color: #FFFFFF;
     margin-bottom: 20px;
@@ -409,48 +400,48 @@ section p { /* WILL MODIFY */
     flex-direction: row;
     align-content: center;
     padding: 20px;
-    gap: 20px;
-    transition: transform 0.3s ease-in-out; 
+    gap: 20px; 
+    border-radius: 8px;
+    margin: 20px 20px;
 }
 
 /* Popular Post Hover Styles */
-.popular-post:hover { /* WILL MODIFY */
+/* .popular-post:hover { 
     margin-left: -10px;
     margin-right: -10px;
-    /* transition: transform 0.3s ease-in-out; */
-}
+} */
 
 /* Popular Post Image Styles */
-.popular-post-image { /* WILL MODIFY */
+.popular-post-image {  
     width: 100px;
     height: 120px; 
-    overflow: hidden; /* MODIFIED */
+    overflow: hidden;  
     border-radius: 8px;
 }
 
 /* Popular Post Image Hover Styles */
-.popular-post-image img { /* WILL MODIFY */
+.popular-post-image img {  
     min-width: 100%;
     min-height: 100%;
     object-fit: cover; 
-    transition: transform 0.3s ease; /* MODIFIED */
+    transition: transform 0.3s ease;  
 }
 
 /* Popular Post Title Styles */
-.popular-post-title { /* WILL MODIFY */
-    font-size: 16px; /* MODIFIED */
+.popular-post-title {  
+    font-size: 16px;  
     color: #000000;
     font-weight: bold; 
     margin-bottom: 5px;
-    text-align: right; /* MODIFIED */
+    text-align: right;  
 }
 
 /* Popular Post Description Styles */
-.popular-post-desc { /* WILL MODIFY */
+.popular-post-desc {  
     font-size: 14px; 
-    color: #000000; /* MODIFIED */
+    color: #000000;  
     margin-bottom: 10px;
-    text-align: right; /* MODIFIED */
+    text-align: right;  
 }
 
 /* Responsive Styles for Popular Posts Container */
@@ -465,9 +456,9 @@ section p { /* WILL MODIFY */
 }
 
 /* Social Side Container Styles */
-.social-side { /* WILL MODIFY */
+.social-side {  
     margin: 20px 0;
-    width: 100px; 
+    width: 100%; 
     display: flex;
     justify-content: center;
     position: relative;
@@ -476,6 +467,8 @@ section p { /* WILL MODIFY */
     gap: 20px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    order: 1;
+    flex-direction: row;
 }
 
 .social-side h2 {
@@ -497,15 +490,15 @@ section p { /* WILL MODIFY */
   width: 35px;
   height: 1px;
   background-color: #8E8E8E;
-  margin: 5px auto; /* center the lines vertically */
+  margin: 5px auto; 
 }
 
 .social-side h2:before {
-  margin-bottom: 5px; /* add some space between the lines */
+  margin-bottom: 5px;  
 }
 
 /* Social Side Box Styles */
-.social-side div { /* WILL MODIFY */
+.social-side div { 
     display: flex;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -514,6 +507,7 @@ section p { /* WILL MODIFY */
     gap: 20px;
     justify-content: center; 
     margin: 0 5px;
+    width: 100%;
 }
 
 /* Social Side Link Styles */
