@@ -511,7 +511,7 @@ section p {
 }
 
 /* Social Side Link Styles */
-.social-side div a { /* WILL MODIFY */
+.social-side div a { 
     max-width: 32px;
     transition: transform 0.3s ease-in-out; 
     display: flex;
