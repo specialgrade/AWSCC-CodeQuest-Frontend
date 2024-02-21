@@ -1,16 +1,16 @@
-/* Typography - Lato */
+/* typography - lato */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-/* Global Styling */
+/* global styling */
 :root {
     --white: #FFFFFF; /* main color */
     --gray: #EEEEEE; /* bg color */
     --black: #000000; /* secondary color: text, footer */
     --green: #39811D; /* tertiary color: accent color, header */
-    --box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* box shadow = WILL MODIFY */
+    --box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* box shadow */
 }
 
-*, /* resets default browser styling  */
+*, /* resets default browser styling */
 *::after,
 *::before { 
     padding: 0;
@@ -54,9 +54,9 @@ article, aside, footer, header, nav, section {
 	display: block; 
 }
 
-/* Navigation Styling */
+/* navigation styling */
 
-/* Navigation Bar Styles */
+/* navigation bar styles */
 nav {
     display: flex;
     position: fixed; 
@@ -71,7 +71,7 @@ nav {
     box-shadow: var(--box-shadow);
 }
 
-/* Navigation Text Styles */
+/* navigation text styles */
 nav p {
     font-size: 16px;
     font-weight: bold;
@@ -80,13 +80,13 @@ nav p {
     transition: color 0.3s ease;  
 }
 
-/* Navigation Span Styles */
+/* navigation span styles */
 nav p span {
     color: #000000;
     transition: color 0.3s ease; 
 }
 
-/* Navigation List Styles */
+/* navigation list styles */
 nav ul { 
     display: flex;
     gap: 16px; 
@@ -95,7 +95,7 @@ nav ul {
     margin-left: auto;  
 }
 
-/* Navigation List Item Styles */
+/* navigation list item styles */
 nav ul li {  
     padding: 8px;
     border-radius: 8px;
@@ -104,42 +104,42 @@ nav ul li {
     background-color: #FFFFFF;  
 }
 
-/* Navigation List Item Hover Styles */
+/* navigation list item hover styles */
 nav ul li:hover { 
     background-color: #39811D;
     color: #FFFFFF;
 }
 
-/* Navigation List Item Anchor Styles */
+/* navigation list item anchor styles */
 nav ul li a { 
     color: #000000;
     font-weight: normal;
     transition: color 0.3s ease; 
 }
 
-/* Navigation List Item Anchor Hover Styles */
+/* navigation list item anchor hover styles */
 nav ul li:hover > a { 
     color: #FFFFFF;
     transition: color 0.3s ease; 
 }
 
-/* Responsive Styles for Navigation */
+/* responsive styles for navigation */
 @media only screen and (max-width: 880px) {
     nav {
         margin: 0 auto; 
     }
 }
 
-/* Responsive Styles for Hidden Navigation on Small Screens */
+/* responsive styles for hidden navigation on small screens */
 @media only screen and (max-width: 700px) {
     nav ul {
         display: none; 
     }
 }
 
-/* Slider Section Styling */
+/* slider section styling */
 
-/* Section Styles */
+/* section styles */
 section {  
     position: relative;
     background-color: #39811D;
@@ -170,7 +170,7 @@ section p {
     box-sizing: border-box;
 }
 
-/* Content Styles */
+/* content styles */
 .content {  
     position: absolute;
     left: 0;
@@ -183,21 +183,21 @@ section p {
     box-sizing: border-box;
 }
 
-/* Heading Styles */
+/* heading styles */
 .content h2 {
     font-size: 38.4px;  
     line-height: 1.2;
     margin-bottom: 16px;
 }
 
-/* Paragraph Styles */
+/* paragraph styles */
 .content p {
     font-size: 16px; 
     line-height: 1.5;
     margin-bottom: 32px;
 }
 
-/* Responsive Styles */
+/* responsive styles */
 @media only screen and (max-width: 945px) {
     .content h2 {
         font-size: 35.2px; 
@@ -229,9 +229,9 @@ section p {
     }
 }
 
-/* Main Content Section Styling */
+/* main content section styling */
 
-/* Main Content Container Styles */
+/* main content container styles */
 .main-content {  
     display: flex;
     align-items: center;
@@ -248,17 +248,17 @@ section p {
     }
 }
 
-/* Blog Section Styles */
+/* blog section styles */
 .blog {
     flex: 2; 
 }
 
-/* Sidebar Section Styles */
+/* sidebar section styles */
 .sidebar {
     flex: 1; 
 }
 
-/* Post Styles */
+/* post styles */
 .post {  
     display: flex;
     background-color: #FFFFFF;
@@ -271,7 +271,7 @@ section p {
     margin: 20px;
 }
 
-/* Post Image Styles */
+/* post image styles */
 .post-image { 
     min-height: 200px;
     transition: opacity 0.3s ease;
@@ -279,13 +279,13 @@ section p {
     width: 30%; 
 }
 
-/* Hover Effect on Post Image */
+/* hover effect on post image */
 .post:hover .post-image img { 
     transform: scale(1.1);
     transition: transform 0.3s ease; 
 }
 
-/* Post Image Inner Styles */
+/* post image inner styles */
 .post-image img { 
     height: 100%;
     transition: transform 0.3s ease;
@@ -293,7 +293,7 @@ section p {
     width: 100%; 
 }
 
-/* Post Content Styles */
+/* post content styles */
 .post-content { 
     padding: 20px;
     text-align: left;
@@ -304,7 +304,7 @@ section p {
     width: 78%; 
 }
 
-/* Post Title Styles */
+/* post title styles */
 .post-title { 
     color: #000000;
     font-size: 32px;
@@ -313,7 +313,7 @@ section p {
     margin-bottom: 10px; 
 }
 
-/* Post Info Styles */
+/* post info styles */
 .post-info { 
     text-align: left;
     color: #000000;
@@ -321,21 +321,21 @@ section p {
     margin-bottom: 20px; 
 }
 
-/* Post Summary Styles */
+/* post summary styles */
 .post-summary { 
     line-height: 1.5;
     color: #000000;
     font-size: 16px; 
 }
 
-/* Responsive Styles */
+/* responsive styles */
 @media only screen and (max-width: 992px) {
     .main-content {
         flex-direction: column; 
     }
 }
 
-/* Responsive Styles for Posts */
+/* responsive styles for posts */
 @media only screen and (max-width: 500px) {
     .main-content {
         margin: 0 20px; 
@@ -356,28 +356,29 @@ section p {
     }
 }
 
-/* Sidebar Styling */
+/* sidebar styling */
 
-/* Sidebar Container Styles */
+/* sidebar container styles */
 .sidebar { 
     text-align: right;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; 
-    align-items: flex-end;
+    align-items: center;
     align-content: flex-start; 
 }
 
-/* Popular Posts Container Styles */
+/* popular posts container styles */
 .popular-posts-side { 
-    margin: 20px 0;
+    margin: 0px 20px;
     width: 100%; 
     text-align: left;
     position: relative;
     overflow: hidden;
+    align-items: center;
 }
 
-/* Popular Posts Heading Styles */
+/* popular posts heading styles */
 .popular-posts-side h2, .social-side h2 { 
     font-size: 24px;
     color: #000000;
@@ -388,7 +389,7 @@ section p {
     order: -1;  
 }
 
-/* Popular Post Styles */
+/* popular post styles */
 .popular-post {  
     position: relative;
     background-color: #FFFFFF;
@@ -402,16 +403,19 @@ section p {
     padding: 20px;
     gap: 20px; 
     border-radius: 8px;
-    margin: 20px 20px;
+    margin: 25px 25px;
+    float: left;
+    width: 45%;
+    margin-left: 50px;
 }
 
-/* Popular Post Hover Styles */
+/* popular post hover styles */
 /* .popular-post:hover { 
     margin-left: -10px;
     margin-right: -10px;
 } */
 
-/* Popular Post Image Styles */
+/* popular post image styles */
 .popular-post-image {  
     width: 100px;
     height: 120px; 
@@ -419,7 +423,7 @@ section p {
     border-radius: 8px;
 }
 
-/* Popular Post Image Hover Styles */
+/* popular post image hover styles */
 .popular-post-image img {  
     min-width: 100%;
     min-height: 100%;
@@ -427,7 +431,7 @@ section p {
     transition: transform 0.3s ease;  
 }
 
-/* Popular Post Title Styles */
+/* popular post title styles */
 .popular-post-title {  
     font-size: 16px;  
     color: #000000;
@@ -436,7 +440,7 @@ section p {
     text-align: right;  
 }
 
-/* Popular Post Description Styles */
+/* popular post description styles */
 .popular-post-desc {  
     font-size: 14px; 
     color: #000000;  
@@ -444,7 +448,7 @@ section p {
     text-align: right;  
 }
 
-/* Responsive Styles for Popular Posts Container */
+/* responsive styles for popular posts container */
 @media only screen and (max-width: 500px) {
     .popular-posts-side {
         margin: 10px 0; 
@@ -455,10 +459,10 @@ section p {
     }
 }
 
-/* Social Side Container Styles */
+/* social side container styles */
 .social-side {  
-    margin: 20px 0;
-    width: 100%; 
+    margin: 20px 20px;
+    width: 50%; 
     display: flex;
     justify-content: center;
     position: relative;
@@ -469,21 +473,23 @@ section p {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     order: 1;
     flex-direction: row;
+    border-radius: 8px;
+    margin-top: 90px; 
+    align-items: center;
 }
 
 .social-side h2 {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1.2px;
-    text-transform: uppercase;
-    color: #8E8E8E;
-    text-align: center;
-    margin-bottom: 10px;
-    width: 100%;
-}   
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    margin-top: 50px; 
+    align-items: center;
+    text-align: center; 
+} 
 
-.social-side h2:before,
+/* .social-side h2:before,
 .social-side h2:after {
   content: "";
   display: block;
@@ -491,49 +497,56 @@ section p {
   height: 1px;
   background-color: #8E8E8E;
   margin: 5px auto; 
-}
+} */
 
 .social-side h2:before {
   margin-bottom: 5px;  
 }
 
-/* Social Side Box Styles */
+/* social side box styles */
 .social-side div { 
     display: flex;
     padding: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background: #FFFFFF;
+    background: #FFFFFF; 
     border-radius: 50%;
     gap: 20px;
     justify-content: center; 
-    margin: 0 5px;
-    width: 100%;
+    width: 50px;
+    height: 50px; 
+    margin: 20px;
+    
 }
 
+<<<<<<< HEAD
+/* social side link styles */
+=======
 /* Social Side Link Styles */
-.social-side div a { /* WILL MODIFY */
+>>>>>>> ae5d5bab39efd092f3a0eca6cf52c9f2b3a002c0
+.social-side div a { 
     max-width: 32px;
     transition: transform 0.3s ease-in-out; 
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%; 
 }
 
 .social-side div a img {
     width: 20px;
     height: 20px;
+    transition: transform 0.3s ease-in-out;
   }
 
-/* Social Side Link Hover Styles */
+/* social side link hover styles */
 .social-side div a:hover img { 
     transform: translateY(-5px);
     filter: grayscale(100%); 
     transition: transform 0.3s ease-in-out; 
 }
 
-/* Footer Splitter Styles */
+/* footer splitter styles */
 @media only screen and (max-width: 992px) { 
   .sidebar {
         flex-direction: column; 
@@ -544,16 +557,15 @@ section p {
     }
 }
 
+/* footer styling */
 
-/* Footer Styling */
-
-/* Footer Container Styles */
+/* footer container styles */
 .container footer { 
     background-color: #000000;
     color: #000000; 
 }
 
-/* Footer Boxes Container Styles */
+/* footer boxes container styles */
 .container footer .footerBoxes { 
     display: flex;
     flex-direction: row;
@@ -564,21 +576,21 @@ section p {
     padding: 20px 0; 
 }
 
-/* Responsive Styles for Footer Boxes Container */
+/* responsive styles for footer boxes container */
 @media only screen and (max-width: 1000px) { 
     .container footer .footerBoxes {
         padding: 10px 0; 
     }
 }
 
-/* Responsive Styles for Footer Boxes Container (Mobile) */
+/* responsive styles for footer boxes container (mobile) */
 @media only screen and (max-width: 600px) { 
     .container footer .footerBoxes {
         flex-direction: column; 
     }
 }
 
-/* Footer Box Styles */
+/* footer box styles */
 .container footer .footerBoxes .footerBox { 
     flex: 1;
     text-align: left; 
@@ -586,7 +598,7 @@ section p {
     margin: 0 20px;
 }
 
-/* Footer Box Heading Styles */
+/* footer box heading styles */
 .container footer .footerBoxes .footerBox h3 { 
     color: #FFFFFF;
     font-size: 18px;
@@ -601,7 +613,7 @@ section p {
     margin-right: 30px;
 }
 
-/* Footer Box Divider Styles */
+/* footer box divider styles */
 .container footer .footerBoxes .footerBox hr { 
     height: 1px;
     width: 100%;
@@ -610,7 +622,7 @@ section p {
     margin-bottom: 20px; 
 }
 
-/* Footer Box Text Styles */
+/* footer box text styles */
 .container footer .footerBoxes .footerBox p { 
     font-size: 13px;
     color: #FFFFFF; 
@@ -620,7 +632,7 @@ section p {
     border-width: 25px;
 }
 
-/* Footer Splitter Styles */
+/* footer splitter styles */
 .container footer .splitter { 
     height: 1px;
     width: 95%;
@@ -630,7 +642,7 @@ section p {
     margin-bottom: 10px; 
 }
 
-/* Copy-Right Text Styles */
+/* copy-right text styles */
 .copy-right { 
     font-size: 14px;
     width: 100%;
@@ -642,6 +654,9 @@ section p {
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< HEAD
+}
+=======
 }
 
 /* Responsive Design */
@@ -651,3 +666,4 @@ section p {
 /* Additional Tips */
 
 /* Add any additional styling tips here */
+>>>>>>> ae5d5bab39efd092f3a0eca6cf52c9f2b3a002c0
