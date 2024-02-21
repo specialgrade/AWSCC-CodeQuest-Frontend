@@ -518,11 +518,9 @@ section p {
     
 }
 
-<<<<<<< HEAD
 /* social side link styles */
-=======
+
 /* Social Side Link Styles */
->>>>>>> ae5d5bab39efd092f3a0eca6cf52c9f2b3a002c0
 .social-side div a { 
     max-width: 32px;
     transition: transform 0.3s ease-in-out; 
@@ -654,10 +652,8 @@ section p {
     display: flex;
     align-items: center;
     justify-content: center;
-<<<<<<< HEAD
 }
-=======
-}
+
 
 /* Responsive Design */
 
@@ -666,4 +662,3 @@ section p {
 /* Additional Tips */
 
 /* Add any additional styling tips here */
->>>>>>> ae5d5bab39efd092f3a0eca6cf52c9f2b3a002c0
