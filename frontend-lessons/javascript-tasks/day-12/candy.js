@@ -7,3 +7,4 @@ let totalCost = (weightCandyA * 35.00) + (weightCandyB * 45.00) + (weightCandyC 
 let costFormat = totalCost.toFixed(2);
 
 console.log(`The total cost of the bag of mixed candies is Php ${costFormat}.`);
+
