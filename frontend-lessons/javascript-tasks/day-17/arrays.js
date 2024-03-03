@@ -27,6 +27,7 @@ const greaterThanFive = prod.filter(prod => {
     }
 })
 console.log(greaterThanFive);
+console.log('\n');
 
 // TASK 4
 const colors = ['pink', 'purple', 'yellow', 'green', 'blue', 'peach'];
@@ -37,3 +38,10 @@ console.log(colors); // to show if there are changes
 
 const secThird = colors.slice(1, 3);
 console.log(secThird);
+
+// TASK 5
+let characters = ['daisy', 'rose', 'tulip', 'peony', 'lily', 'dahlia'];
+
+characters.splice(2, 0, 'iris', 'marigold');
+characters.splice(4, 3);
+console.log(characters);
