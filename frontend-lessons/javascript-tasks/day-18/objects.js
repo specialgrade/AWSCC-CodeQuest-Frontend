@@ -23,9 +23,32 @@ console.log(student.subjects);
 const rectangle = {
     width: 20,
     height: 25,
-    calculateArea() {
+    calculateArea: function(width, height) {
         return width * height;
     }
 }
-rectArea = rectangle.calculateArea();
-console.log(ractArea);
+
+const rectArea = rectangle.calculateArea(rectangle.width, rectangle.height);
+console.log(rectArea);
+
+// TASK 4
+const person = {
+    name: 'Aly',
+    age: 18,
+    address: 'San Mateo, Rizal',
+}
+
+delete person.address;
+console.log(person.address);
+
+const employee = {
+    name: 'Aly',
+    position: 'Junior Frontend Developer',
+}
+
+const employeeDetails = {
+    person: person,
+    employee: employee,
+}
+
+console.log(employeeDetails);
