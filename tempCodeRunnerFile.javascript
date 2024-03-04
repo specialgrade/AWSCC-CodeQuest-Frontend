@@ -1,31 +1,14 @@
 // TASK 1
-const book = {
-    title: 'The Perks of Being a Wallflower',
-    author: 'Stephen Chbosky',
-    year: 1999,
+const product = {
+    name: 'Cat Long Cushion Stuff Plush',
+    price: 799,
+    quantity: 10,
 }
-console.log(book.author + '\n');
+
+const productJSON = JSON.stringify(product);
+console.log(productJSON);
 
 // TASK 2
-const student = {
-    name: 'Aly',
-    age: 18,
-    grade: 'First Year',
-}
-
-student.age = 19;
-student.subjects = ['Computer Programming 1', 'Introduction to Computing', 'Computer Programming 2', 'Discrete Structure 1'];
-
-console.log(student.age + '\n');
-console.log(student.subjects);
-
-// TASK 3
-const rectangle = {
-    width: 20,
-    height: 25,
-    calculateArea() {
-        return width * height;
-    }
-}
-rectArea = rectangle.calculateArea();
-console.log(ractArea);
+const bookJSON = '{"title": "Dekada '70", "author": "Lualhati Bautista", "publishedYear": 1983}';
+const book = JSON.parse(bookJSON);
+console.log(book);
