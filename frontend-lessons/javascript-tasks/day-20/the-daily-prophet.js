@@ -19,7 +19,7 @@ console.log(highlight);
 let secondParagraph = document.getElementsByTagName("p")[1];
 secondParagraph.textContent ="This paragraph is now updated!";
 
-let headerDiv;
+let headerDiv; // will modify
 headerDiv = document.getElementById("header"); 
 console.log(headerDiv); 
 headerDiv.style.backgroundColor = "#168aad"; 
