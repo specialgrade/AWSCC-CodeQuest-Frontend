@@ -1,49 +1,41 @@
 // TASK 1
-let paragraphs = document.getElementsByTagName("p");
-for (let i = 0; i < paragraphs.length; i++) {
-    console.log(paragraphs[i]);
-}
+const paragraphs = document.getElementsByTagName("p");
+console.log("Paragraphs: ", paragraphs);
 
-let infos = document.getElementsByClassName("info");
-for (let i = 0; i < infos.length; i++) {
-    console.log(infos[i]);
-}
+const infos = document.getElementsByClassName("info");
+console.log("Info Elements: ", infos);
 
-let header = document.getElementById("header");
-console.log(header);
+const headerElement = document.getElementById("header");
+console.log("Header Element: ", headerElement);
 
-let highlight = document.querySelector(".highlight");
-console.log(highlight);
+const highlightElement = document.querySelector(".highlight");
+console.log("Highlight Element: ", highlightElement);
 
 // TASK 2
 let secondParagraph = document.getElementsByTagName("p")[1];
 secondParagraph.textContent ="This paragraph is now updated!";
 
-let headerDiv; // will modify
-headerDiv = document.getElementById("header"); 
-console.log(headerDiv); 
+let headerDiv = document.getElementById("header"); 
 headerDiv.style.backgroundColor = "#168aad"; 
 
 // TASK 3
-let newHeading = document.createElement("h3"); // will modify
+let newHeading = document.createElement("h3"); 
 newHeading.textContent = 'New Section';
 document.body.appendChild(newHeading);
 
 // TASK 4
-let firstParagraph = document.getElementsByTagName("p")[0]; // will modify
-firstParagraph.parentNode.removeChild(firstParagraph); 
+let firstParagraph = document.getElementsByTagName("p")[0];  
+firstParagraph.parentNode.removeChild(firstParagraph);  
 
 // TASK 5
-headerDiv = document.getElementById("header"); // will modify
-
+headerDiv = document.getElementById("header"); 
 headerDiv.addEventListener('click', function() {
-    console.log("Header clicked!");
-});
+    console.log('Header clicked!');
+})
 
 // TASK 6
-let colors = ['#c4fff9', '#9ceaef', '#68d8d6', '#3dccc7']; // will modify
-paragraphs = document.getElementsByTagName("p");
+let colors = ['#d9ed92', '#b5e48c', '#99d98c', '#76c893', '#52b69a', '#34a0a4']; 
 
 for (let i = 0; i < paragraphs.length; i++) {
-    paragraphs[i].style.backgroundColor = colors[i % colors.length];
+    paragraphs[i].style.backgroundColor = colors[i]; 
 }

@@ -86,6 +86,22 @@
             
             const highlightElement = document.querySelector(".highlight");
             console.log("Highlight Element: ", highlightElement);
+
+            // TASK 2
+            let secondParagraph = document.getElementsByTagName("p")[1];
+            secondParagraph.textContent ="This paragraph is now updated!";
+
+            let headerDiv = document.getElementById("header"); 
+            headerDiv.style.backgroundColor = "#168aad"; 
+
+            // TASK 3
+            let newHeading = document.createElement("h3"); 
+            newHeading.textContent = 'New Section';
+            document.body.appendChild(newHeading);
+
+            // TASK 4
+            let firstParagraph = document.getElementsByTagName("p")[0];  
+            firstParagraph.parentNode.removeChild(firstParagraph);  
         </script>
     </div>
 </body>
