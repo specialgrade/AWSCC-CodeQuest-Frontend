@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Removing Class with JavaScript</title>
+    <title>Ideal Partner's Age</title>
 </head>
 <body>
-    <div id="myDiv" class="highlight">This is a highlighted div.</div>
+    <div id="myDiv" class="highlight">
+        <h2>This is a div.</h2>
+    </div>
+    <div>
+        <h3>I am...</h3>
+        <p>a <strong>boy.</strong></p>
+
+        <h3>I am...</h3>
+        <p><strong>18</strong> years old.</p>
+
+        <h3>What is my ideal partner's age?</h3>
+        <h4>Click the link below to find out:</h4>
+
+        <a href="#" onclick="alert('Hey there, user! Please open the browser console to see your ideal partner\'s age.')">What's my ideal partner's age?</a>
+    </div>
     <script>
         // TASK 3
+        const age = 18;
+        let IPA = (age / 2) + 7;
+        console.log(`Your ideal partner's age is ${IPA}.`);
+
         const myDiv = document.getElementById('myDiv');
         myDiv.classList.remove('highlight');
     </script>
