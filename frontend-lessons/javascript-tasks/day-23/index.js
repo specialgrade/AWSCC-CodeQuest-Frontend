@@ -96,4 +96,3 @@
 // 14. Test the input field by typing to see the keypress events logged in the console.
 
 // *Feel free to customize the messages and actions in the event listeners based on your preferences. This assignment will help you practice working with various event listeners in JavaScript. Good luck! 🚀*
-

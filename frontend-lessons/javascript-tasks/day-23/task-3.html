@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseenter Event Listener</title>
+</head>
+<body>
+    <button id="myButton">Click Me!</button>
+
+    <button id="doubleClickButton">Double Click Me!</button>
+
+    <button id="mouseenterButton">Hover Me!</button>
+
+    <script>
+        const button1 = document.getElementById('myButton');
+
+        button1.addEventListener('click', function(event) {
+            alert('Button clicked!');
+        });
+
+        const button2 = document.getElementById('doubleClickButton');
+
+        button2.addEventListener('dblclick', function(event) {
+            alert('Button double-clicked!');
+        });
+
+        const button3 = document.getElementById('mouseenterButton');
+
+        button3.addEventListener('mouseenter', function(event) {
+            button3.style.backgroundColor = '#f5cac3';
+        });
+
+        button3.addEventListener('mouseleave', function(event) {
+            button3.style.backgroundColor = ''; 
+        });
+    </script>
+</body>
+</html>

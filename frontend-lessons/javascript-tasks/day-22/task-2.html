@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removing DOM Element</title>
+</head>
+<body>
+    <ul id="myList">
+        <li>Anemo</li>
+        <li>Geo</li>
+        <li>Electro</li>
+        <li>Dendro</li>
+        <li>Hydro</li>
+        <li>Pyro</li>
+        <li>Cryo</li>
+    </ul>
+        
+    <script>
+        const myList = document.getElementById('myList');
+        
+        const itemToRemove = myList.children[0]; 
+        myList.removeChild(itemToRemove);
+        
+        const lastItem = myList.lastElementChild;
+        lastItem.remove();
+        
+        myList.innerHTML = '';
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating an Element with JavaScript</title>
+</head>
+<body>
+    <div id="dynamicContainer">
+        <!-- dynamically created elements will be added here -->
+    </div>
+        
+    <script>
+        const dynamicContainer = document.getElementById('dynamicContainer');
+        
+        const newImage = document.createElement('img');
+        
+        newImage.src = 'keqing.jpg';
+        newImage.alt = 'QueenQing';
+        
+        dynamicContainer.appendChild(newImage);
+    </script>
+</body>
+</html>
