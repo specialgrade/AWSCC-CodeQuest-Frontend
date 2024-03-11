@@ -2,7 +2,7 @@
 const cities = ['Manila', 'Makati', 'Cebu', 'Baguio', 'Iloilo' ];
 console.log(cities[2]);
 
-cities[1] = 'Taguig'
+cities[1] = 'Taguig';
 console.log(cities[1] + '\n');
 
 // TASK 2
