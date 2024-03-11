@@ -1,3 +1,4 @@
+// TASK 3
 let isMorning = true;
 let isRaining = false;
 
@@ -13,8 +14,6 @@ if (isMorning || isRaining) {
     console.log('No need to bring an umbrella.\n');
 } 
 
-// to check their value
-console.log(isMorning && isRaining); // prints false
-console.log(isMorning || isRaining); // prints true
-console.log(!isMorning); // prints false
-
+console.log(isMorning && isRaining);  
+console.log(isMorning || isRaining);  
+console.log(!isMorning);  
