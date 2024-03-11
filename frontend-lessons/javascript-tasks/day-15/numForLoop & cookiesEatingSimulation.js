@@ -8,10 +8,11 @@ for (let i = 0; i <= 2; i++) {
     console.log(cookies[i]);
 }
 
+// eating simulation
 let cookiesInJar = 3; 
 let jarNotEmpty = true;
 
-while (jarNotEmpty && cookiesInJar > 0) { // eating simulation
+while (jarNotEmpty && cookiesInJar > 0) { 
     console.log('Nom nom nom...');
     cookiesInJar--;
 }
