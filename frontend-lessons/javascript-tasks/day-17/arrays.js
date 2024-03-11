@@ -34,7 +34,7 @@ const colors = ['pink', 'purple', 'yellow', 'green', 'blue', 'peach'];
 
 colors.unshift('white');
 colors.shift();
-console.log(colors); // to show if there are changes
+console.log(colors); 
 
 const secThird = colors.slice(1, 3);
 console.log(secThird);
