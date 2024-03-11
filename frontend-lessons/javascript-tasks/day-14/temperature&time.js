@@ -6,7 +6,7 @@ if (temperature > 30) {
     console.log(`Achoo! I'm freezing, the temperature is so cold. It\'s ${temperature} degrees celsius outside.\n`)
 }
 
-let time = 18.00;
+let time = 18.00; // 24 hr time notation
 
 if (time >= 0.00 && time < 11.59) {
     console.log('Good morning, user!\n');
