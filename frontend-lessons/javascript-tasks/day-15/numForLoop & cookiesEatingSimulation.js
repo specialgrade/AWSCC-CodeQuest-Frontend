@@ -11,7 +11,7 @@ for (let i = 0; i <= 2; i++) {
 let cookiesInJar = 3; 
 let jarNotEmpty = true;
 
-while (jarNotEmpty && cookiesInJar > 0) {
+while (jarNotEmpty && cookiesInJar > 0) { // eating simulation
     console.log('Nom nom nom...');
     cookiesInJar--;
 }
