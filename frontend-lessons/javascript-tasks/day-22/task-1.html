@@ -6,19 +6,15 @@
     <title>Creating an Element with JavaScript</title>
 </head>
 <body>
-    <div id="dynamicContainer">
-        <!-- dynamically created elements will be added here -->
-    </div>
+    <div id="dynamicContainer"></div>
         
     <script>
-        const dynamicContainer = document.getElementById('dynamicContainer');
-        
         const newImage = document.createElement('img');
         
         newImage.src = 'keqing.jpg';
         newImage.alt = 'QueenQing';
         
-        dynamicContainer.appendChild(newImage);
+        document.getElementById('dynamicContainer').appendChild(newImage);
     </script>
 </body>
 </html>
