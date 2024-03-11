@@ -11,6 +11,7 @@ console.log(productJSON + '\n');
 // TASK 2
 const bookJSON = `{"title":"Dekada '70", "author":"Lualhati Bautista", "publishedYear":1983}`;
 const book = JSON.parse(bookJSON);
+
 console.log(book);
 console.log('\n');
 
