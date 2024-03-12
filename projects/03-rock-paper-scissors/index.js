@@ -42,7 +42,7 @@ function gameTime(player1Choice) {
     player2ChoiceDisplay.textContent = player2Choice;
 
     if (player1Choice === player2Choice) {
-        gameStatusDisplay.textContent = 'DRAW!';
+        gameStatusDisplay.textContent = 'IT\'S A DRAW!';
     } else if (player1Choice === 'paper' && player2Choice === 'rock' || player1Choice === 'rock' && player2Choice === 'scissors' || player1Choice === 'scissors' && player2Choice === 'paper') {
         gameStatusDisplay.textContent = 'PLAYER 1 WINS!';
         player1Score++;
