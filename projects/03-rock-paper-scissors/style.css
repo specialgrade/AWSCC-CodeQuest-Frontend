@@ -78,7 +78,7 @@ h1 {
     font-size: 50px;
 }
 
-#game-status {
+#game-status { /* will modify */
     display: flex;
     text-align: center;
     align-items: center;
