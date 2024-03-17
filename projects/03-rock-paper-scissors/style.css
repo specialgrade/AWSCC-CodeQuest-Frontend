@@ -112,7 +112,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 680px; /* 680px */
+    height: 680px; 
     font-size: 80px;
 }
 
