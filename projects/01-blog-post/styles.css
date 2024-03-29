@@ -4,7 +4,7 @@
     --white: #FFFFFF; /* main color */
     --gray: #EEEEEE; /* bg color */
     --black: #000000; /* secondary color */
-    --green: #39811D; /* tertiary color: accent color */
+    --green: #39811D; /* accent color */
     --box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* box shadow */
 }
 
