@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Space+Mono&display=swap');
+
+body {
+    background-color: #669bbc;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #c1121f;
+    background-color: #fdf0d5;
+    font-family: 'Lilita One', cursive;
+    width: fit-content; 
+    border-radius: 15px;
+    padding: 20px;
+    margin: 50px auto 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#guess {
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #c1121f;
+    border-radius: 5px;
+    background-color: #fdf0d5;
+}
+
+#submit-btn {
+    padding: 10px 20px;
+    background-color: #c1121f;
+    color: #fdf0d5;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#submit-btn:hover {
+    background-color: #780000;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fdf0d5;
+}
