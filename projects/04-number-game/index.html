@@ -8,11 +8,17 @@
 </head>
 
 <body>
-    <h1>Number Guessing Game</h1>
+    <h1>< - - GUESS THE SECRET NUMBER - - ></h1>
+        <h2>Can you guess the secret number? Guess wisely, and I'll give you hints if you're getting near! Break a leg! (∩˃o˂∩)♡</h2>
     <div class="container">
         <input type="number" id="guess" placeholder="Enter your guess">
         <button id="submit-btn">Submit</button>
+        <button id="endGame-btn">Give up!</button>
+        <button id="restart-btn">Play again!</button>
         <p id="message"></p>
+    </div>
+    <div>
+        <p id="guesses">No. of guesses: <span id="totalGuesses">0</span></p>
     </div>
     <script src="index.js"></script>
 </body>
