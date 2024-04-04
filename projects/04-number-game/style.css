@@ -61,13 +61,13 @@ h2 {
 #message {
     margin-top: 25px; 
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 2rem;
     color: #fdf0d5;
 }
 
 #guesses {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 14px;
     color: #c1121f;
     background-color: #fdf0d5;
     font-family: 'Lilita One', cursive;
@@ -75,5 +75,6 @@ h2 {
     border-radius: 15px;
     padding: 20px; 
     margin: 50px auto 20px auto;
+    margin-top: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
