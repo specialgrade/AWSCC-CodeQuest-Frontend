@@ -64,6 +64,8 @@ function resetGame() {
 
     player1ScoreDisplay.textContent = '';
     player2ScoreDisplay.textContent = '';
+    player1ChoiceDisplay.textContent = '';
+    player2ChoiceDisplay.textContent = '';
     gameStatusDisplay.textContent = 'GAME RESET!'
 
 }
